@@ -1,0 +1,89 @@
+Welcome to the read me for my password manager!
+
+Description:
+This program is a password manager created in Python 3.9 used to store information for any app/account login under one user "Master" account.  
+
+List of required libraries:
+passwordmeter
+pyperclip
+requests
+
+Install Instructions: 
+In your preferred command line(cmd, powershell, bash, etc), navigate to your python \Scripts\ folder and run the following commands:
+
+pip install passwordmeter
+pip install pyperclip
+
+-if pip is not working for you, try pip3
+
+
+Operating Instructions:
+Once dependencies are installed, unzip the PassMan.zip file and run the PWmanager.py file to start using the program. Some "test" accounts exist already for the purpose of testing out logging in
+without account creation. The usernames and passwords for these logins will be listed below.
+
+	Existing user account info(for testing w/o account creation):
+	username: JoshuaPuhala	password: testpass
+	username Tester	password: testpass
+
+
+File Manifest:
+-PassMan.zip
+	-README.txt
+	-PWManager.py
+	-PWGenerator.py
+	-Credentials.py
+	-menu.py
+	-data_manager.py
+	-API_manager.py
+	-InputValidation.py
+	-users.txt
+	-JoshuaPuhala_vault.txt
+	-Tester_vault.txt
+
+
+Known Bugs/Issues:
+This program was written on and performs best on Windows. The main reason for this being that data_manager.py uses formatted strings to save the .txt files in the current working directory. This 
+prevents the user from having to search around for their files if they would like to view the data outside of the program. However, Linux/Unix directories are formatted differently and some issues 
+can arise from file saving. In linux specifically the 'dir_path' variables and '\' can be removed to save to the default directory.
+
+
+Warning:
+This program is in it's infantile stages and is 100% NOT secure or safe to use in anyway for real purposes. Passwords are not hashed, the info is stored client side in plaintext. There are myriad problems
+with practical usage of the program at this point in time (5/11/22). I, the creator of this program, assume no responsibility if your data becomes compromised through the use of this program. Use at your 
+own risk. 
+
+
+Acknowledgements/Credit where it is due:
+This program utilizes 3rd party libraries passwordmeter and pyperclip, documentation for both linked below.
+passwordmeter: https://github.com/cadithealth/passwordmeter
+pyperclip: https://pyperclip.readthedocs.io/en/latest/
+
+The program also interacts with the HaveIBeenPwned API to query for leaked passwords. The documentation for this API is linked below as well as the HIBP homepage. 
+API docs: https://haveibeenpwned.com/API/v3
+homepage: https://haveibeenpwned.com/
+
+The project was inspired by Grant Collins' and Kalle Hallden's password manager videos and github repositories. Kalle's menu display structure looked very nice and is used in a slightly altered form here 
+until a GUI is implemented. However, this project is very different from their projects and aims to become a more complete program over time despite being a much simpler and less secured program at present. 
+Both of their Youtube channels and githubs are linked below.
+Grant Collins: 
+	Youtube: https://www.youtube.com/channel/UCTLUi3oc1-a7dS-2-YgEKmA
+	github: https://github.com/collinsmc23
+Kalle Hallden:
+	Youtube: https://www.youtube.com/c/KalleHallden
+	github: https://github.com/KalleHallden
+
+
+Planned Updates:
+v2(May/June '22):
+-Password hashing
+-User data encryption
+v3(July '22):
+-Database storage
+v4(August '22):
+-More API search options
+-GUI
+
+
+Author Info:
+Created by: Joshua Puhala in May '22
+Contact email: jpuhala@mail.pima.edu

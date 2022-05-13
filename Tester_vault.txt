@@ -1,0 +1,3 @@
+{'app': 'tweets', 'username': 'testtweets', 'email': 'tweeter@mail.com', 'password': 'tweetpass', 'url': 'tweeter.com', 'notes': 'Tweet Tweet'}
+{'app': 'bookface', 'username': 'testface', 'email': 'testface@bookface.com', 'password': '2.U-2Q471p', 'url': 'bookface.com', 'notes': 'none'}
+{'app': 'google', 'username': 'testgoogle', 'email': 'test@gmail.com', 'password': ')y6wJ4M3?u', 'url': 'google.com', 'notes': 'googlenotes'}
